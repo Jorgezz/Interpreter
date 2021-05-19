@@ -46,20 +46,12 @@
                                 <action selector="clear:" destination="oqM-hE-VlH" id="Ped-zs-Ymv"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="info" id="fTq-wf-Uch">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="showInfo:" destination="oqM-hE-VlH" id="p6x-J8-Ka0"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="play" id="D32-Ws-39S">
-                                <color key="tintColor" systemColor="systemBlueColor"/>
-                                <connections>
-                                    <action selector="execute:" destination="oqM-hE-VlH" id="4W8-Gw-utb"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="D32-Ws-39S">
+                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <connections>
+                                <action selector="execute:" destination="oqM-hE-VlH" id="4W8-Gw-utb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqk-OX-IVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,7 +147,6 @@
     </scenes>
     <color key="tintColor" systemColor="linkColor"/>
     <resources>
-        <image name="info" width="22" height="22"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
