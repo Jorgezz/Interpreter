@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="SzV-qi-HIg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BfR-qS-IUR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="SzV-qi-HIg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="IfV-zU-Dmb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.63921568630000003" green="0.90980392160000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oqM-hE-VlH" kind="relationship" relationship="rootViewController" id="5fv-Ha-TXR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuY-od-ElC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44.927536231884062" y="-77.678571428571431"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="XLv-3e-n8F">
+            <objects>
+                <viewController id="oqM-hE-VlH" customClass="JSHHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fpm-pI-7LB"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJU-Cf-VR0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0qa-6J-6eO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="bW9-p7-z7G">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="aaf-xw-4h2">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <action selector="clear:" destination="oqM-hE-VlH" id="Ped-zs-Ymv"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="info" id="fTq-wf-Uch">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="showInfo:" destination="oqM-hE-VlH" id="p6x-J8-Ka0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="play" id="D32-Ws-39S">
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <action selector="execute:" destination="oqM-hE-VlH" id="4W8-Gw-utb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqk-OX-IVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614.49275362318849" y="-77.678571428571431"/>
+        </scene>
+        <!--Editor-->
+        <scene sceneID="7d3-xH-YaP">
+            <objects>
+                <viewController storyboardIdentifier="editorViewController" title="Editor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qEG-HH-O80" customClass="JSHEditorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F9R-J0-eJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMI-w0-8Lq"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="KeD-z5-x7w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmP-iv-YDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="-589"/>
+        </scene>
+        <!--Logs-->
+        <scene sceneID="KSr-Nl-9xA">
+            <objects>
+                <viewController storyboardIdentifier="logsViewController" title="Logs" id="SS7-Ms-cy4" customClass="JSHLogsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="onN-ot-2N4"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCO-us-6cD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qk0-bG-AGb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFS-5m-P6j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="bFS-5m-P6j" firstAttribute="top" secondItem="qk0-bG-AGb" secondAttribute="top" id="KTm-AV-u6M"/>
+                            <constraint firstItem="oCO-us-6cD" firstAttribute="top" secondItem="bFS-5m-P6j" secondAttribute="bottom" id="nQZ-sz-J8S"/>
+                            <constraint firstItem="bFS-5m-P6j" firstAttribute="leading" secondItem="qk0-bG-AGb" secondAttribute="leading" id="uTQ-L6-Rpi"/>
+                            <constraint firstAttribute="trailing" secondItem="bFS-5m-P6j" secondAttribute="trailing" id="zWQ-N6-0jL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logs" destination="bFS-5m-P6j" id="4Yh-Ry-oEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5h-hX-pth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5072463768117" y="89.0625"/>
+        </scene>
+        <!--Docs-->
+        <scene sceneID="O9D-uv-92V">
+            <objects>
+                <viewController storyboardIdentifier="documentationViewController" title="Docs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V2b-qG-pCI" customClass="NLDocumentationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DgJ-ID-FEW"/>
+                        <viewControllerLayoutGuide type="bottom" id="xkm-or-S23"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4lQ-p6-eJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpl-f4-t7X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vpl-f4-t7X" secondAttribute="bottom" id="NIQ-ff-8tu"/>
+                            <constraint firstAttribute="trailing" secondItem="vpl-f4-t7X" secondAttribute="trailing" id="aUT-7y-XRI"/>
+                            <constraint firstItem="vpl-f4-t7X" firstAttribute="top" secondItem="4lQ-p6-eJZ" secondAttribute="top" id="e95-LI-3ou"/>
+                            <constraint firstItem="vpl-f4-t7X" firstAttribute="leading" secondItem="4lQ-p6-eJZ" secondAttribute="leading" id="yqT-su-ND6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="vpl-f4-t7X" id="RI3-wj-Bc0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouz-Hk-uSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2088" y="89"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
+    <resources>
+        <image name="info" width="22" height="22"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

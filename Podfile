@@ -1,3 +1,13 @@
-platform :ios, '7.0'
+platform :ios, '10.0'
 
-pod 'Nodelike', :git => 'https://github.com/node-app/Nodelike.git', :commit => '9eab9ce1053eb80599cb323222601ce8695486dc', :submodules => true
+source 'git@git.corp.kuaishou.com:ios/dependents.git'
+source 'git@git.corp.kuaishou.com:im_cloud/ios/KwaiIMFramework.git'
+source 'git@git.corp.kuaishou.com:lib-iOS/GamePackagesDepot.git' # game resources
+source 'git@git.corp.kuaishou.com:krn/tools/react-native-spec.git'
+
+target 'JSHell' do
+  pod 'hermes-engine', '~> 0.8.0'
+  pod 'libevent', '~> 2.1.12'
+  pod 'SDWebImage', "5.8.3.17"
+#  pod 'Nodelike', :path => "../Nodelike"
+end

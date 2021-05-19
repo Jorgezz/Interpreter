@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		461CABB52653F12100F8715C /* JSHLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461CABB42653F12100F8715C /* JSHLogsViewController.m */; };
+		468A61EB26524B2500F18815 /* KOSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A61E926524B2400F18815 /* KOSwipeButton.m */; };
+		468A61EC26524B2500F18815 /* KOKeyboardRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A61EA26524B2400F18815 /* KOKeyboardRow.m */; };
+		468A635126529B4400F18815 /* JSBigString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 468A635026529B4400F18815 /* JSBigString.cpp */; };
+		6CB0B3E8A5D5F64895B8D5B3 /* libPods-JSHell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71A28FCCE61A9BE21668616 /* libPods-JSHell.a */; };
+		B50A490118C2C15D00656FA3 /* node_modules in Resources */ = {isa = PBXBuildFile; fileRef = B50A490018C2C15D00656FA3 /* node_modules */; };
+		B51198D1183D2DFE008B2DE5 /* NLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B51198D0183D2DFE008B2DE5 /* NLColor.m */; };
+		B51198D5183D3E55008B2DE5 /* NLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B51198D4183D3E55008B2DE5 /* NLTextView.m */; };
+		B51198DD183D7E64008B2DE5 /* Syntax.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51198DC183D7E64008B2DE5 /* Syntax.plist */; };
+		B54C1F97180D488D0051F826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B44654180AB78E009ADEF9 /* Main.storyboard */; };
+		B588412B182D1D83007C5B0F /* NLDocumentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B588412A182D1D83007C5B0F /* NLDocumentationViewController.m */; };
+		B597EB7A18396ADB00DC767C /* CSNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B597EB7918396ADB00DC767C /* CSNotificationView.m */; };
+		B597EB7C18396AE400DC767C /* CSNotificationView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B597EB7B18396AE400DC767C /* CSNotificationView.xcassets */; };
+		B5B44643180AB78E009ADEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44642180AB78E009ADEF9 /* Foundation.framework */; };
+		B5B44645180AB78E009ADEF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44644180AB78E009ADEF9 /* CoreGraphics.framework */; };
+		B5B44647180AB78E009ADEF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44646180AB78E009ADEF9 /* UIKit.framework */; };
+		B5B4464D180AB78E009ADEF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5B4464B180AB78E009ADEF9 /* InfoPlist.strings */; };
+		B5B4464F180AB78E009ADEF9 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5B4464E180AB78E009ADEF9 /* main.mm */; };
+		B5B44653180AB78E009ADEF9 /* JSHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B44652180AB78E009ADEF9 /* JSHAppDelegate.m */; };
+		B5B44659180AB78E009ADEF9 /* JSHEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B44658180AB78E009ADEF9 /* JSHEditorViewController.m */; };
+		B5B4465B180AB78E009ADEF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B4465A180AB78E009ADEF9 /* Images.xcassets */; };
+		B5C056251846A4A400E8A4B1 /* SEJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C056241846A4A400E8A4B1 /* SEJSONViewController.m */; };
+		B5C3ABC218BA796800F927B6 /* PBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3ABC118BA796700F927B6 /* PBWebViewController.m */; };
+		B5FD81211897EE97007FB460 /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD811A1897EE97007FB460 /* CYRLayoutManager.m */; };
+		B5FD81221897EE97007FB460 /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD811C1897EE97007FB460 /* CYRTextStorage.m */; };
+		B5FD81231897EE97007FB460 /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD811E1897EE97007FB460 /* CYRTextView.m */; };
+		B5FD81241897EE97007FB460 /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD81201897EE97007FB460 /* CYRToken.m */; };
+		B5FD8127189860DB007FB460 /* FHSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD8126189860DB007FB460 /* FHSegmentedViewController.m */; };
+		B5FD812A18986190007FB460 /* JSHHomeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5FD812918986190007FB460 /* JSHHomeViewController.mm */; };
+		EC774F6319F8C54E009601A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC774F6219F8C54E009601A5 /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		119A9120D883131024F2650C /* Pods-Interpreter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interpreter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Interpreter/Pods-Interpreter.release.xcconfig"; sourceTree = "<group>"; };
+		26A8B1C87F26DE173C529FA1 /* Pods-JSHell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSHell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSHell/Pods-JSHell.debug.xcconfig"; sourceTree = "<group>"; };
+		461CABB32653F12100F8715C /* JSHLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHLogsViewController.h; sourceTree = "<group>"; };
+		461CABB42653F12100F8715C /* JSHLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHLogsViewController.m; sourceTree = "<group>"; };
+		468A61E726524B2400F18815 /* KOKeyboardRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOKeyboardRow.h; sourceTree = "<group>"; };
+		468A61E826524B2400F18815 /* KOSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOSwipeButton.h; sourceTree = "<group>"; };
+		468A61E926524B2400F18815 /* KOSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOSwipeButton.m; sourceTree = "<group>"; };
+		468A61EA26524B2400F18815 /* KOKeyboardRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOKeyboardRow.m; sourceTree = "<group>"; };
+		468A634F26529B4400F18815 /* JSBigString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBigString.h; sourceTree = "<group>"; };
+		468A635026529B4400F18815 /* JSBigString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSBigString.cpp; sourceTree = "<group>"; };
+		7FBE56915B121D5FE0A9819D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8117120AB6FC210201EE728F /* Pods-Interpreter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interpreter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Interpreter/Pods-Interpreter.debug.xcconfig"; sourceTree = "<group>"; };
+		B50A490018C2C15D00656FA3 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = node_modules; sourceTree = "<group>"; };
+		B51198CF183D2DFE008B2DE5 /* NLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLColor.h; sourceTree = "<group>"; };
+		B51198D0183D2DFE008B2DE5 /* NLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLColor.m; sourceTree = "<group>"; };
+		B51198D3183D3E55008B2DE5 /* NLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLTextView.h; sourceTree = "<group>"; };
+		B51198D4183D3E55008B2DE5 /* NLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLTextView.m; sourceTree = "<group>"; };
+		B51198DC183D7E64008B2DE5 /* Syntax.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Syntax.plist; sourceTree = "<group>"; };
+		B54C1F95180D37C80051F826 /* libm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libm.dylib; path = usr/lib/libm.dylib; sourceTree = SDKROOT; };
+		B5884129182D1D83007C5B0F /* NLDocumentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLDocumentationViewController.h; sourceTree = "<group>"; };
+		B588412A182D1D83007C5B0F /* NLDocumentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLDocumentationViewController.m; sourceTree = "<group>"; };
+		B597EB7818396ADB00DC767C /* CSNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNotificationView.h; sourceTree = "<group>"; };
+		B597EB7918396ADB00DC767C /* CSNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNotificationView.m; sourceTree = "<group>"; };
+		B597EB7B18396AE400DC767C /* CSNotificationView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CSNotificationView.xcassets; sourceTree = "<group>"; };
+		B59EA04F180CB38E005BF5C1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B5B4463F180AB78E009ADEF9 /* JSHell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSHell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B44642180AB78E009ADEF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5B44644180AB78E009ADEF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5B44646180AB78E009ADEF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5B4464A180AB78E009ADEF9 /* JSHell-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSHell-info.plist"; sourceTree = "<group>"; };
+		B5B4464C180AB78E009ADEF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5B4464E180AB78E009ADEF9 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		B5B44650180AB78E009ADEF9 /* JSHell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSHell-Prefix.pch"; sourceTree = "<group>"; };
+		B5B44651180AB78E009ADEF9 /* JSHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSHAppDelegate.h; sourceTree = "<group>"; };
+		B5B44652180AB78E009ADEF9 /* JSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSHAppDelegate.m; sourceTree = "<group>"; };
+		B5B44655180AB78E009ADEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5B44657180AB78E009ADEF9 /* JSHEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSHEditorViewController.h; sourceTree = "<group>"; };
+		B5B44658180AB78E009ADEF9 /* JSHEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSHEditorViewController.m; sourceTree = "<group>"; };
+		B5B4465A180AB78E009ADEF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5B44661180AB78E009ADEF9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5C056231846A4A400E8A4B1 /* SEJSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEJSONViewController.h; sourceTree = "<group>"; };
+		B5C056241846A4A400E8A4B1 /* SEJSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEJSONViewController.m; sourceTree = "<group>"; };
+		B5C3ABC018BA796700F927B6 /* PBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWebViewController.h; sourceTree = "<group>"; };
+		B5C3ABC118BA796700F927B6 /* PBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWebViewController.m; sourceTree = "<group>"; };
+		B5FD81191897EE97007FB460 /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRLayoutManager.h; sourceTree = "<group>"; };
+		B5FD811A1897EE97007FB460 /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRLayoutManager.m; sourceTree = "<group>"; };
+		B5FD811B1897EE97007FB460 /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextStorage.h; sourceTree = "<group>"; };
+		B5FD811C1897EE97007FB460 /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextStorage.m; sourceTree = "<group>"; };
+		B5FD811D1897EE97007FB460 /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextView.h; sourceTree = "<group>"; };
+		B5FD811E1897EE97007FB460 /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextView.m; sourceTree = "<group>"; };
+		B5FD811F1897EE97007FB460 /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRToken.h; sourceTree = "<group>"; };
+		B5FD81201897EE97007FB460 /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRToken.m; sourceTree = "<group>"; };
+		B5FD8125189860DB007FB460 /* FHSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSegmentedViewController.h; sourceTree = "<group>"; };
+		B5FD8126189860DB007FB460 /* FHSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSegmentedViewController.m; sourceTree = "<group>"; };
+		B5FD812818986190007FB460 /* JSHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHHomeViewController.h; sourceTree = "<group>"; };
+		B5FD812918986190007FB460 /* JSHHomeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JSHHomeViewController.mm; sourceTree = "<group>"; };
+		C71A28FCCE61A9BE21668616 /* libPods-JSHell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSHell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C815032B24C06CF2B913EFFB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E8F2C1AC49CE40D55EC6E183 /* Pods-JSHell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSHell.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSHell/Pods-JSHell.release.xcconfig"; sourceTree = "<group>"; };
+		EC774F6219F8C54E009601A5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5B4463C180AB78E009ADEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B44645180AB78E009ADEF9 /* CoreGraphics.framework in Frameworks */,
+				B5B44647180AB78E009ADEF9 /* UIKit.framework in Frameworks */,
+				B5B44643180AB78E009ADEF9 /* Foundation.framework in Frameworks */,
+				6CB0B3E8A5D5F64895B8D5B3 /* libPods-JSHell.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		468A61E526524B2400F18815 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				468A635026529B4400F18815 /* JSBigString.cpp */,
+				468A634F26529B4400F18815 /* JSBigString.h */,
+				468A61E626524B2400F18815 /* KOKeyboard */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		468A61E626524B2400F18815 /* KOKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				468A61E726524B2400F18815 /* KOKeyboardRow.h */,
+				468A61E826524B2400F18815 /* KOSwipeButton.h */,
+				468A61E926524B2400F18815 /* KOSwipeButton.m */,
+				468A61EA26524B2400F18815 /* KOKeyboardRow.m */,
+			);
+			path = KOKeyboard;
+			sourceTree = "<group>";
+		};
+		5CC787AE903E133D5AE0EBDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE56915B121D5FE0A9819D /* Pods.debug.xcconfig */,
+				C815032B24C06CF2B913EFFB /* Pods.release.xcconfig */,
+				8117120AB6FC210201EE728F /* Pods-Interpreter.debug.xcconfig */,
+				119A9120D883131024F2650C /* Pods-Interpreter.release.xcconfig */,
+				26A8B1C87F26DE173C529FA1 /* Pods-JSHell.debug.xcconfig */,
+				E8F2C1AC49CE40D55EC6E183 /* Pods-JSHell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5B44636180AB78E009ADEF9 = {
+			isa = PBXGroup;
+			children = (
+				B50A490018C2C15D00656FA3 /* node_modules */,
+				B5B44648180AB78E009ADEF9 /* JSHell */,
+				B5B44641180AB78E009ADEF9 /* Frameworks */,
+				B5B44640180AB78E009ADEF9 /* Products */,
+				5CC787AE903E133D5AE0EBDC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B44640180AB78E009ADEF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5B4463F180AB78E009ADEF9 /* JSHell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5B44641180AB78E009ADEF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54C1F95180D37C80051F826 /* libm.dylib */,
+				B59EA04F180CB38E005BF5C1 /* JavaScriptCore.framework */,
+				B5B44642180AB78E009ADEF9 /* Foundation.framework */,
+				B5B44644180AB78E009ADEF9 /* CoreGraphics.framework */,
+				B5B44646180AB78E009ADEF9 /* UIKit.framework */,
+				B5B44661180AB78E009ADEF9 /* XCTest.framework */,
+				C71A28FCCE61A9BE21668616 /* libPods-JSHell.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B44648180AB78E009ADEF9 /* JSHell */ = {
+			isa = PBXGroup;
+			children = (
+				468A61E526524B2400F18815 /* Vendor */,
+				B5B44651180AB78E009ADEF9 /* JSHAppDelegate.h */,
+				B5B44652180AB78E009ADEF9 /* JSHAppDelegate.m */,
+				B51198D3183D3E55008B2DE5 /* NLTextView.h */,
+				B51198D4183D3E55008B2DE5 /* NLTextView.m */,
+				B5FD81191897EE97007FB460 /* CYRLayoutManager.h */,
+				B5FD811A1897EE97007FB460 /* CYRLayoutManager.m */,
+				B5FD811B1897EE97007FB460 /* CYRTextStorage.h */,
+				B5FD811C1897EE97007FB460 /* CYRTextStorage.m */,
+				B5FD811D1897EE97007FB460 /* CYRTextView.h */,
+				B5FD811E1897EE97007FB460 /* CYRTextView.m */,
+				B5FD811F1897EE97007FB460 /* CYRToken.h */,
+				B5FD81201897EE97007FB460 /* CYRToken.m */,
+				B5B44654180AB78E009ADEF9 /* Main.storyboard */,
+				B51198CF183D2DFE008B2DE5 /* NLColor.h */,
+				B51198D0183D2DFE008B2DE5 /* NLColor.m */,
+				B5FD812818986190007FB460 /* JSHHomeViewController.h */,
+				B5FD812918986190007FB460 /* JSHHomeViewController.mm */,
+				B5B44657180AB78E009ADEF9 /* JSHEditorViewController.h */,
+				B5B44658180AB78E009ADEF9 /* JSHEditorViewController.m */,
+				461CABB32653F12100F8715C /* JSHLogsViewController.h */,
+				461CABB42653F12100F8715C /* JSHLogsViewController.m */,
+				B5884129182D1D83007C5B0F /* NLDocumentationViewController.h */,
+				B588412A182D1D83007C5B0F /* NLDocumentationViewController.m */,
+				B5C3ABC018BA796700F927B6 /* PBWebViewController.h */,
+				B5C3ABC118BA796700F927B6 /* PBWebViewController.m */,
+				B5C056231846A4A400E8A4B1 /* SEJSONViewController.h */,
+				B5C056241846A4A400E8A4B1 /* SEJSONViewController.m */,
+				B597EB7818396ADB00DC767C /* CSNotificationView.h */,
+				B597EB7918396ADB00DC767C /* CSNotificationView.m */,
+				B5FD8125189860DB007FB460 /* FHSegmentedViewController.h */,
+				B5FD8126189860DB007FB460 /* FHSegmentedViewController.m */,
+				B597EB7B18396AE400DC767C /* CSNotificationView.xcassets */,
+				B5B4465A180AB78E009ADEF9 /* Images.xcassets */,
+				B5B44649180AB78E009ADEF9 /* Supporting Files */,
+				EC774F6219F8C54E009601A5 /* LaunchScreen.xib */,
+			);
+			path = JSHell;
+			sourceTree = "<group>";
+		};
+		B5B44649180AB78E009ADEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51198DC183D7E64008B2DE5 /* Syntax.plist */,
+				B5B4464A180AB78E009ADEF9 /* JSHell-info.plist */,
+				B5B4464B180AB78E009ADEF9 /* InfoPlist.strings */,
+				B5B4464E180AB78E009ADEF9 /* main.mm */,
+				B5B44650180AB78E009ADEF9 /* JSHell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5B4463E180AB78E009ADEF9 /* JSHell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B44671180AB78E009ADEF9 /* Build configuration list for PBXNativeTarget "JSHell" */;
+			buildPhases = (
+				5F5B857DCADEB727A3F40F49 /* [CP] Check Pods Manifest.lock */,
+				2A226F2218919AC300F58AE6 /* Set CFBundleVersion to current Git Commit Hash */,
+				5A1AFDF162304FC08D9AD807 /* Check Pods Manifest.lock */,
+				B5B4463B180AB78E009ADEF9 /* Sources */,
+				B5B4463C180AB78E009ADEF9 /* Frameworks */,
+				B50A497318C7624B00656FA3 /* Clean node_modules */,
+				B5B4463D180AB78E009ADEF9 /* Resources */,
+				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
+				7C7523D942CAF998D5002C09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSHell;
+			productName = NodelikeDemo;
+			productReference = B5B4463F180AB78E009ADEF9 /* JSHell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5B44637180AB78E009ADEF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sam Rijs";
+				TargetAttributes = {
+					B5B4463E180AB78E009ADEF9 = {
+						DevelopmentTeam = MKU6U4NGA4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5B4463A180AB78E009ADEF9 /* Build configuration list for PBXProject "JSHell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = B5B44636180AB78E009ADEF9;
+			productRefGroup = B5B44640180AB78E009ADEF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5B4463E180AB78E009ADEF9 /* JSHell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5B4463D180AB78E009ADEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51198DD183D7E64008B2DE5 /* Syntax.plist in Resources */,
+				B597EB7C18396AE400DC767C /* CSNotificationView.xcassets in Resources */,
+				B54C1F97180D488D0051F826 /* Main.storyboard in Resources */,
+				EC774F6319F8C54E009601A5 /* LaunchScreen.xib in Resources */,
+				B5B4465B180AB78E009ADEF9 /* Images.xcassets in Resources */,
+				B50A490118C2C15D00656FA3 /* node_modules in Resources */,
+				B5B4464D180AB78E009ADEF9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A226F2218919AC300F58AE6 /* Set CFBundleVersion to current Git Commit Hash */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set CFBundleVersion to current Git Commit Hash";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Release ] || [ $CONFIGURATION == TestFlight ]; then\n    echo \"Bumping build number...\"\n    plist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n    # increment the build number (ie 115 to 116)\n    buildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\n    if [[ \"${buildnum}\" == \"\" ]]; then\n        echo \"No build number in $plist\"\n        exit 2\n    fi\n\n    buildnum=$(expr $buildnum + 1)\n    /usr/libexec/Plistbuddy -c \"Set CFBundleVersion $buildnum\" \"${plist}\"\n    echo \"Bumped build number to $buildnum\"\n\nelse\n    echo $CONFIGURATION \" build - Not bumping build number.\"\nfi\n";
+		};
+		5A1AFDF162304FC08D9AD807 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F5B857DCADEB727A3F40F49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSHell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7523D942CAF998D5002C09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JSHell/Pods-JSHell-frameworks.sh",
+				"${PODS_ROOT}/hermes-engine/destroot/Library/Frameworks/iphoneos/hermes.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSHell/Pods-JSHell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50A497318C7624B00656FA3 /* Clean node_modules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Clean node_modules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/node_modules\"";
+		};
+		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Objective-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\"?NL \nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\" \nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5B4463B180AB78E009ADEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B44659180AB78E009ADEF9 /* JSHEditorViewController.m in Sources */,
+				B5B44653180AB78E009ADEF9 /* JSHAppDelegate.m in Sources */,
+				B5C056251846A4A400E8A4B1 /* SEJSONViewController.m in Sources */,
+				B588412B182D1D83007C5B0F /* NLDocumentationViewController.m in Sources */,
+				B597EB7A18396ADB00DC767C /* CSNotificationView.m in Sources */,
+				B51198D5183D3E55008B2DE5 /* NLTextView.m in Sources */,
+				B5FD81211897EE97007FB460 /* CYRLayoutManager.m in Sources */,
+				461CABB52653F12100F8715C /* JSHLogsViewController.m in Sources */,
+				468A61EB26524B2500F18815 /* KOSwipeButton.m in Sources */,
+				B5FD81231897EE97007FB460 /* CYRTextView.m in Sources */,
+				B5FD812A18986190007FB460 /* JSHHomeViewController.mm in Sources */,
+				B5FD81221897EE97007FB460 /* CYRTextStorage.m in Sources */,
+				B5C3ABC218BA796800F927B6 /* PBWebViewController.m in Sources */,
+				B5B4464F180AB78E009ADEF9 /* main.mm in Sources */,
+				B5FD8127189860DB007FB460 /* FHSegmentedViewController.m in Sources */,
+				468A61EC26524B2500F18815 /* KOKeyboardRow.m in Sources */,
+				B5FD81241897EE97007FB460 /* CYRToken.m in Sources */,
+				468A635126529B4400F18815 /* JSBigString.cpp in Sources */,
+				B51198D1183D2DFE008B2DE5 /* NLColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5B4464B180AB78E009ADEF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B4464C180AB78E009ADEF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5B44654180AB78E009ADEF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B44655180AB78E009ADEF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5B4466F180AB78E009ADEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5B44670180AB78E009ADEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5B44672180AB78E009ADEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A8B1C87F26DE173C529FA1 /* Pods-JSHell.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = MKU6U4NGA4;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSHell/JSHell-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/JSHell/JSHell-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tool.jshell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5B44673180AB78E009ADEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F2C1AC49CE40D55EC6E183 /* Pods-JSHell.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSHell/JSHell-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/JSHell/JSHell-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tool.jshell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B4463A180AB78E009ADEF9 /* Build configuration list for PBXProject "JSHell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B4466F180AB78E009ADEF9 /* Debug */,
+				B5B44670180AB78E009ADEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B44671180AB78E009ADEF9 /* Build configuration list for PBXNativeTarget "JSHell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B44672180AB78E009ADEF9 /* Debug */,
+				B5B44673180AB78E009ADEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5B44637180AB78E009ADEF9 /* Project object */;
+}
