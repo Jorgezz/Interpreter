@@ -18,8 +18,10 @@
 
 #import <hermes/hermes.h>
 #include "JSBigString.h"
+#import "NodeRunner.h"
 
 std::unique_ptr<facebook::jsi::Runtime> runtime;
+NSThread *nodejsThread;
 
 @interface JSHHomeViewController ()
 @end
@@ -80,10 +82,42 @@ std::unique_ptr<facebook::jsi::Runtime> runtime;
     self.navigationController.toolbar.barTintColor       = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
 }
 
+- (void)startNode:(NSString *)nodeCode {
+    nodejsThread = [[NSThread alloc] initWithTarget:self selector:@selector(excuteNode:) object:nodeCode];
+    // Set 2MB of stack space for the Node.js thread.
+    [nodejsThread setStackSize:2*1024*1024];
+    [nodejsThread start];
+}
+
+- (void)cancelNode {
+    [nodejsThread cancel];
+}
+
+- (void)excuteNode:(NSString *)nodeCode {
+    NSArray* nodeArguments = [NSArray arrayWithObjects:
+                              @"node",
+                              @"-e",
+                              nodeCode,
+                              nil
+                              ];
+    [NodeRunner startEngineWithArguments:nodeArguments];
+}
+
+
 - (void)executeJS:(NSString *)code {
     if ([code stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0) {
         return;
     }
+    NSString *localNodeServerURL = [NSString stringWithFormat:@"http:/127.0.0.1:3000/excuteJSCode?code=%@", code];
+    NSURL  *url = [NSURL URLWithString:localNodeServerURL];
+    NSString *versionsData = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    if (versionsData) {
+        [self output:versionsData];
+    }
+
+//    [self cancelNode];
+//    [self startNode:code];
+    
     JSValue *ret = [_context evaluateScript:code];
     if (![ret isUndefined]) {
         [self output:[ret toString]];
@@ -92,33 +126,34 @@ std::unique_ptr<facebook::jsi::Runtime> runtime;
 //        [self error:[code stringByAppendingString:@"undefined"]];
 //        return;
 //    }
-    try {
-        NSLog(@"runtime->evaluateJavaScript start!");
-
-        hermes::vm::GCConfig::Builder gcConfigBuilder{};
-        gcConfigBuilder
-            .withAllocInYoung(false)
-            .withRevertToYGAtTTI(true);
-        ::hermes::vm::RuntimeConfig runtimeConfig = ::hermes::vm::RuntimeConfig();
-        runtime = facebook::hermes::makeHermesRuntime(runtimeConfig);
-        NSString *srcCode = code;
-        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.log" withString:@"print"];
-        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.info" withString:@"print"];
-        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.warn" withString:@"print"];
-        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.error" withString:@"print"];
-
-        std::string src = [srcCode UTF8String]; //"function __tickleJs() { return Math.random(); }";
-        src = "'use strict';" + src;
-        facebook::jsi::Value value = runtime->evaluateJavaScript(std::make_shared<facebook::jsi::StringBuffer>(src), "__runScript");
-        facebook::jsi::String retHermes = value.toString(*runtime);
-        NSLog(@"runtime->evaluateJavaScript ret: %s end!", retHermes.utf8(*runtime).c_str());
-    } catch (const std::exception & e) {
-        NSString *exception = [[NSString alloc] initWithUTF8String:e.what()];
-        [self error:exception];
-        [((JSHLogsViewController *)self.logsViewController) log:[NSString stringWithFormat:@"result: %@\n", exception]];
-    }
-    [((JSHLogsViewController *)self.logsViewController) log:code];
-    [((JSHLogsViewController *)self.logsViewController) log:[NSString stringWithFormat:@"result: %@\n", [ret toString]]];
+    
+//    try {
+//        NSLog(@"runtime->evaluateJavaScript start!");
+//
+//        hermes::vm::GCConfig::Builder gcConfigBuilder{};
+//        gcConfigBuilder
+//            .withAllocInYoung(false)
+//            .withRevertToYGAtTTI(true);
+//        ::hermes::vm::RuntimeConfig runtimeConfig = ::hermes::vm::RuntimeConfig();
+//        runtime = facebook::hermes::makeHermesRuntime(runtimeConfig);
+//        NSString *srcCode = code;
+//        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.log" withString:@"print"];
+//        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.info" withString:@"print"];
+//        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.warn" withString:@"print"];
+//        srcCode = [srcCode stringByReplacingOccurrencesOfString:@"console.error" withString:@"print"];
+//
+//        std::string src = [srcCode UTF8String]; //"function __tickleJs() { return Math.random(); }";
+//        src = "'use strict';" + src;
+//        facebook::jsi::Value value = runtime->evaluateJavaScript(std::make_shared<facebook::jsi::StringBuffer>(src), "__runScript");
+//        facebook::jsi::String retHermes = value.toString(*runtime);
+//        NSLog(@"runtime->evaluateJavaScript ret: %s end!", retHermes.utf8(*runtime).c_str());
+//    } catch (const std::exception & e) {
+//        NSString *exception = [[NSString alloc] initWithUTF8String:e.what()];
+//        [self error:exception];
+//        [((JSHLogsViewController *)self.logsViewController) log:[NSString stringWithFormat:@"result: %@\n", exception]];
+//    }
+//    [((JSHLogsViewController *)self.logsViewController) log:code];
+//    [((JSHLogsViewController *)self.logsViewController) log:[NSString stringWithFormat:@"result: %@\n", [ret toString]]];
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         

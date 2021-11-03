@@ -7,11 +7,35 @@
 //
 
 #import "JSHAppDelegate.h"
+#import "NodeRunner.h"
 
 //#import "NLContext.h"
 
 @implementation JSHAppDelegate {
     NSString *scriptToLoad;
+}
+
+- (void)startNode {
+    NSString* srcPath = [[NSBundle mainBundle] pathForResource:@"nodejs-project/main.js" ofType:@""];
+    NSArray* nodeArguments = [NSArray arrayWithObjects:
+                              @"node",
+                              srcPath,
+                              nil
+                              ];
+    [NodeRunner startEngineWithArguments:nodeArguments];
+    
+
+}
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    
+    NSThread *nodejsThread = nil;
+    nodejsThread = [[NSThread alloc] initWithTarget:self selector:@selector(startNode) object:nil];
+    // Set 2MB of stack space for the Node.js thread.
+    [nodejsThread setStackSize:2*1024*1024];
+    [nodejsThread start];
+    
+    return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		461CABB52653F12100F8715C /* JSHLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461CABB42653F12100F8715C /* JSHLogsViewController.m */; };
+		461CABC92655032600F8715C /* NodeRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 461CABC72655032600F8715C /* NodeRunner.mm */; };
+		461CABCE2655035D00F8715C /* NodeMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461CABCD2655035D00F8715C /* NodeMobile.framework */; };
+		461CABD12655049F00F8715C /* NodeMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 461CABCD2655035D00F8715C /* NodeMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		461CABD32655108700F8715C /* nodejs-project in Resources */ = {isa = PBXBuildFile; fileRef = 461CABD22655108700F8715C /* nodejs-project */; };
 		468A61EB26524B2500F18815 /* KOSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A61E926524B2400F18815 /* KOSwipeButton.m */; };
 		468A61EC26524B2500F18815 /* KOKeyboardRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A61EA26524B2400F18815 /* KOKeyboardRow.m */; };
 		468A635126529B4400F18815 /* JSBigString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 468A635026529B4400F18815 /* JSBigString.cpp */; };
@@ -39,11 +43,29 @@
 		EC774F6319F8C54E009601A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC774F6219F8C54E009601A5 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		461CABD02655049200F8715C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				461CABD12655049F00F8715C /* NodeMobile.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		119A9120D883131024F2650C /* Pods-Interpreter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interpreter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Interpreter/Pods-Interpreter.release.xcconfig"; sourceTree = "<group>"; };
 		26A8B1C87F26DE173C529FA1 /* Pods-JSHell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSHell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSHell/Pods-JSHell.debug.xcconfig"; sourceTree = "<group>"; };
 		461CABB32653F12100F8715C /* JSHLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHLogsViewController.h; sourceTree = "<group>"; };
 		461CABB42653F12100F8715C /* JSHLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHLogsViewController.m; sourceTree = "<group>"; };
+		461CABC72655032600F8715C /* NodeRunner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NodeRunner.mm; sourceTree = "<group>"; };
+		461CABC82655032600F8715C /* NodeRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeRunner.h; sourceTree = "<group>"; };
+		461CABCD2655035D00F8715C /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NodeMobile.framework; sourceTree = "<group>"; };
+		461CABD22655108700F8715C /* nodejs-project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "nodejs-project"; sourceTree = "<group>"; };
 		468A61E726524B2400F18815 /* KOKeyboardRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOKeyboardRow.h; sourceTree = "<group>"; };
 		468A61E826524B2400F18815 /* KOSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOSwipeButton.h; sourceTree = "<group>"; };
 		468A61E926524B2400F18815 /* KOSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOSwipeButton.m; sourceTree = "<group>"; };
@@ -110,6 +132,7 @@
 				B5B44645180AB78E009ADEF9 /* CoreGraphics.framework in Frameworks */,
 				B5B44647180AB78E009ADEF9 /* UIKit.framework in Frameworks */,
 				B5B44643180AB78E009ADEF9 /* Foundation.framework in Frameworks */,
+				461CABCE2655035D00F8715C /* NodeMobile.framework in Frameworks */,
 				6CB0B3E8A5D5F64895B8D5B3 /* libPods-JSHell.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,12 +140,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		461CABC62655032600F8715C /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				461CABC72655032600F8715C /* NodeRunner.mm */,
+				461CABC82655032600F8715C /* NodeRunner.h */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		461CABCC2655035D00F8715C /* libnode */ = {
+			isa = PBXGroup;
+			children = (
+				461CABCD2655035D00F8715C /* NodeMobile.framework */,
+			);
+			path = libnode;
+			sourceTree = "<group>";
+		};
 		468A61E526524B2400F18815 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
 				468A635026529B4400F18815 /* JSBigString.cpp */,
 				468A634F26529B4400F18815 /* JSBigString.h */,
 				468A61E626524B2400F18815 /* KOKeyboard */,
+				461CABCC2655035D00F8715C /* libnode */,
+				461CABC62655032600F8715C /* Node */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -154,6 +196,7 @@
 		B5B44636180AB78E009ADEF9 = {
 			isa = PBXGroup;
 			children = (
+				461CABD22655108700F8715C /* nodejs-project */,
 				B50A490018C2C15D00656FA3 /* node_modules */,
 				B5B44648180AB78E009ADEF9 /* JSHell */,
 				B5B44641180AB78E009ADEF9 /* Frameworks */,
@@ -255,6 +298,7 @@
 				B5B4463D180AB78E009ADEF9 /* Resources */,
 				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
 				7C7523D942CAF998D5002C09 /* [CP] Embed Pods Frameworks */,
+				461CABD02655049200F8715C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +354,7 @@
 				B54C1F97180D488D0051F826 /* Main.storyboard in Resources */,
 				EC774F6319F8C54E009601A5 /* LaunchScreen.xib in Resources */,
 				B5B4465B180AB78E009ADEF9 /* Images.xcassets in Resources */,
+				461CABD32655108700F8715C /* nodejs-project in Resources */,
 				B50A490118C2C15D00656FA3 /* node_modules in Resources */,
 				B5B4464D180AB78E009ADEF9 /* InfoPlist.strings in Resources */,
 			);
@@ -435,6 +480,7 @@
 				B5FD812A18986190007FB460 /* JSHHomeViewController.mm in Sources */,
 				B5FD81221897EE97007FB460 /* CYRTextStorage.m in Sources */,
 				B5C3ABC218BA796800F927B6 /* PBWebViewController.m in Sources */,
+				461CABC92655032600F8715C /* NodeRunner.mm in Sources */,
 				B5B4464F180AB78E009ADEF9 /* main.mm in Sources */,
 				B5FD8127189860DB007FB460 /* FHSegmentedViewController.m in Sources */,
 				468A61EC26524B2500F18815 /* KOKeyboardRow.m in Sources */,
@@ -551,6 +597,10 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = MKU6U4NGA4;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSHell/Vendor/libnode",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSHell/JSHell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JSHell/JSHell-info.plist";
@@ -581,6 +631,10 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSHell/Vendor/libnode",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSHell/JSHell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JSHell/JSHell-info.plist";
