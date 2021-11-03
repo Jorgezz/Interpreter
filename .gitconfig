@@ -1,0 +1,3 @@
+[github]
+    user = Jorgezz
+    token = !echo ~/.githubtoken 2> /dev/null
